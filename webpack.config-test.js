@@ -14,5 +14,9 @@ module.exports = {
     loaders: [es6Loader]
   },
   target: 'node',
+  node: {
+    __dirname: false,
+    __filename: false,
+  },
   externals: [nodeExternals()]
 };
