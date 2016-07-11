@@ -7,7 +7,7 @@ describe('parseUniToPinyin', () => {
   it('does a thing', () => {
     return consume(dataPath)
       .then((entries) => {
-        console.log('entries', entries);
+        
       });
   });
 });
