@@ -1,0 +1,48 @@
+{
+  "name": "wenfayin",
+  "version": "0.0.0",
+  "description": "Convert simplified and traditional Chinese text into pronunciation",
+  "main": "./dist/main.js",
+  "dependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.5.0",
+    "babel-polyfill": "^6.5.0",
+    "classnames": "^2.2.3",
+    "lodash": "^4.3.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "webpack": "^1.12.10",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "mocha-webpack": "^0.4.0",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0",
+    "webpack-node-externals": "^1.2.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "mocha-webpack --colors --webpack-config webpack.config-test.js --include \"src/.mocha.js\" \"src/**/*.test.js\"",
+    "test.watch": "npm run test -- --watch",
+    "dev": "npm run build && webpack-dev-server --hot --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iknowcss/wenfayin.git"
+  },
+  "keywords": [
+    "chinese",
+    "pronunciation",
+    "convert"
+  ],
+  "author": "Cody Jenkins <iknowcss@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/iknowcss/wenfayin/issues"
+  },
+  "homepage": "https://github.com/iknowcss/wenfayin#readme"
+}
